@@ -1,7 +1,11 @@
+body {
+  margin: 0;
+}
 
 a {
   color: black;
     }
+
 /* start of main header block styling */
 header {
 position: fixed;
@@ -14,16 +18,21 @@ height: 90px;
 font-family: Verdana;
 font-size: 14px;
 font-weight: bold;
+background-color: white;
 }
 
 .logo {
-  width: 75%;
-  margin: 10px 0 5px 0;
+  display: flex;
+  width: 50%;
+  height: 70px;
+  align-content: center;
+  align-items: center;
   border: 1px solid black;
+  margin-top: 10px;
   }
 
 .logo img {
-  margin: 0 30px;
+  margin: 0 20px;
 }
 
 #name {
@@ -31,12 +40,63 @@ font-weight: bold;
     }
 
 nav{
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
   align-items: center;
+  margin: 10px 20px;
+  border: 1px solid black;
+  flex-wrap: wrap;
 }
 
 nav span {
   display: inline-block;
-  padding-left:
+  padding: 0 15px;
+  }
+/*end of header block styling*/
+
+/*start of main body styling*/
+.mainbody {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid black;
+  position: relative;
+  top: 90px;
+  margin: 0 80px;
   }
 
-/*end of header block styling*/
+.column   {
+  border: 1px solid black;
+  display: inline-flex;
+  flex-direction: column;
+  margin-top: 30px;
+
+}
+
+.column.large {
+  width: 630px;
+  }
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+  margin-right: 60px;
+ }
+
+#cl1,
+#cl2,
+#cl3,
+#cl4,
+#cl5,
+#cl6,
+#cm1,
+#cm2,
+#cm3,
+#cs1,
+#cs2 {
+  border: 1px solid black;
+}
