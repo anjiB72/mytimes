@@ -1,0 +1,42 @@
+
+a {
+  color: black;
+    }
+/* start of main header block styling */
+header {
+position: fixed;
+top: 0;
+z-index: 1;
+display: flex;
+border-bottom: 1px solid black;
+width: 100%;
+height: 90px;
+font-family: Verdana;
+font-size: 14px;
+font-weight: bold;
+}
+
+.logo {
+  width: 75%;
+  margin: 10px 0 5px 0;
+  border: 1px solid black;
+  }
+
+.logo img {
+  margin: 0 30px;
+}
+
+#name {
+  color: mediumAquamarine;
+    }
+
+nav{
+  align-items: center;
+}
+
+nav span {
+  display: inline-block;
+  padding-left:
+  }
+
+/*end of header block styling*/
