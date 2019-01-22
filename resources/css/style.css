@@ -56,49 +56,157 @@ nav span {
 /*end of header block styling*/
 
 /*start of main flex container*/
-.maincontainer {
+.newscontent {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
   position: relative;
   top: 90px;
-  margin: 0 130px;
-  padding-right: 20px;
+  margin: 0 60px 70px 85px;
+    }
+
+/*large column styling*/
+.largecolumn {
+  display: flex;
+  flex-direction: column;
+  width: 630px;
+  margin-top: 30px;
+  align-self: flex-start;
+  align-content: center;
+  margin-right: 20px;
+  flex-shrink: 2;
+}
+
+.mainstory {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-image: url(../images/img-story-main.png);
+  background-repeat: no-repeat;
+  height: 300px;
   }
 
-/*column container styling*/
-.colcontainer   {
+  .mainpic {
+    font-size: 40px;
+    font-family: Georgia;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+    margin: 10px;
+      }
+
+      .maintext p,
+      .orca p,
+      .burger p,
+      .fbi p
+      {
+        font-family: Georgia;
+        font-size: 17px;
+        color: black;
+        text-align: justify;
+      }
+
+    /*large column substories*/
+    .substory{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .subcolumn {
+      display: flex;
+      flex-direction: column;
+      width: 300px;
+      justify-content: space-between;
+      margin: 0 10px 0 0;
+        }
+
+      .orca h1,
+      .burger h1,
+      .fbi h1 {
+        font-size: 30px;
+        font-family: Georgia;
+        font-weight: bold;
+        margin-top: 0;
+      }
+
+      .earth {
+        background-image: url(../images/img-story-2.png);
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-self: flex-start;
+        height: 280px;
+        width: 300px;
+        }
+
+      .camera{
+        background-image: url(../images/img-story-3.png);
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        align-self: flex-start;
+        height: 280px;
+        width: 300px;
+          }
+
+          .picstory{
+            font-family: Georgia;
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+            text-align: center;
+          }
+
+/*medium column styling*/
+.mediumcolumn {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  justify-content:flex-start;
+  margin-right: 20px;
+}
+
+.cat {
+  background-image: url(../images/img-story-1.png);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-self: flex-start;
+  height: 280px;
+  width: 300px;
+  }
+
+  .cat h3{
+    font-family: Georgia;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+  }
+
+/*small column styling*/
+.smallcolumn {
+  width: 240px;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
   align-self: flex-start;
-  align-content: center;
-}
-
-.substory{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.subcol{
-  align-self: flex-start;
-
-}
-
-.colcontainer.large {
-  width: 630px;
-  align-content: stretch;
-    }
-
-.colcontainer.medium {
-  width: 300px;
-}
-
-.colcontainer.small {
-  width: 240px;
+  margin-right: 20px;
    }
+
+
+
+
+
 
 /*styling for stories with background images*/
  .imagestory {
@@ -106,16 +214,6 @@ nav span {
   height: 300px;
      }
 
-  /*styling large column layout*/
-.imagestory1 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  background-image: url(../images/img-story-main.png);
-  background-repeat: no-repeat;
-  height: 300px;
-  padding-left: 20px;
-  }
 
   .story1{
     font-size: 40px;
@@ -137,33 +235,10 @@ nav span {
   color: white;
   text-align: center;
 }
-.imagestory2 {
-  background-image: url(../images/img-story-2.png);
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-self: flex-start;
-  height: 299px;
-  width: 300px;
-  }
-
-.imagestory3{
-  background-image: url(../images/img-story-3.png);
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  align-self: flex-start;
-  height: 299px;
-  width: 300px;
-    }
 
 
 /*styling medium column layout*/
-.imagestory#cm2 {
+.cat {
   background-image: url(../images/img-story-1.png);
   background-repeat: no-repeat;
   }
@@ -173,15 +248,14 @@ nav span {
   font-size: 17px;
   color: black;
 }
+
+.cl3 h3, .cl3 p, .cl5 h3, .cl5 p{
+  width: 300px;
+}
+
+
 /*Borders around content to show outline, will be removed at end*/
-#mainstory,
-.substory,
-#ss1,
-#ss2,
-#cl2,
-#cl3,
 #cl4,
-#cl5,
 #cl6,
 #cm1,
 #cm2,
