@@ -21,79 +21,101 @@
       </nav>
     </header>
 
-    <!--Main body content-->
+    <!--Main body content containing 3 block elements/columns-->
     <div class="newscontent">
 
-      <!-- content in left hand column -->
-      <div class="largecolumn">
+      <!-- start of content in large column -->
+      <div class="column large">
 
+      <!--first flex container in large column-->
         <div class="mainstory">
-          <h1 class="mainpic">
+          <h1>
           Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."
           </h1>
         </div>
+
+        <!--second flex container in large column-->
         <div class="maintext">
           <p>MONUMENT VALLEY, AZ - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nec nisl at augue dapibus dignissim. Nunc condimentum rutrum metus, ac eleifend lacus viverra nec. Proin ultrices egestas diam sed mollis. Nulla sapien massa, dictum vitae est et, pellentesque rutrum risus. Nunc volutpat, metus ac rutrum tempus, orci nisi porttitor dolor, sit amet luctus metus est ut mauris. Quisque vulputate nisl vitae massa rhoncus, at sagittis elit accumsan. Etiam tempus, lorem quis blandit imperdiet, enim dui lobortis tortor, sit amet lobortis arcu ex id odio. Nam fermentum nulla et eros bibendum, sed ullamcorper massa scelerisque. Vestibulum aliquet placerat leo a hendrerit. Nulla non sagittis neque. Nullam sit amet fringilla massa.</P>
         </div>
-
+        <!-- third flex container in column-->
         <div class="substory">
-          <div class="subcolumn">
             <div class="orca">
               <h1>Orca Spends Vacation at Land World Puget</h1>
               <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...
               </p>
             </div>
-            <div class="earth">
-              <h2 class="picstory">Earth Spins Backwards for 2017</h2>
-            </div>
-          </div>
-          <div class="subcolumn">
             <div class="burger">
               <h1>Burger for Breakfast: How Early is too Early?</h1>
               <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.</p>
             </div>
-            <div class="camera">
-              <h2 class="picstory">
-              Research Shows Cameras Erase Memory </h2>
+          </div>
+
+          <!--fourth flex container in large column-->
+          <div class="picstory">
+            <div class="earth">
+                <h2>Earth Spins Backwards for 2017</h2>
+            </div>
+            <div class=camera>
+              <h2>Research Shows Cameras Erase Memory
+              </h2>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- content in middle column -->
-      <div class="mediumcolumn">
+        </div><!--end of large column content-->
+
+
+      <!-- start of middle column content -->
+      <div class="column medium">
         <div class="fbi">
           <h1>FBI Finds Action Star Guilty of False Advertising</h1>
           <p>WASHINGTON DC- Donec luctus sem augue, rutrum posuere orci aliquam sed. Nam vitae aliquam lectus. Sed tempor tortor est, nec sagittis eros tincidunt sed. Morbi venenatis condimentum sem, vitae sollicitudin turpis pulvinar eget. Morbi pellentesque consectetur mi id auctor. Phasellus tincidunt orci mauris, placerat pharetra urna fringilla vitae. Morbi eget rutrum urna. Cras condimentum augue ut ante sollicitudin interdum. Pellentesque cursus dolor at tincidunt cursus. Vestibulum blandit aliquam felis...
           </p>
         </div>
         <div class="cat">
-          <h3>Cats in Control-Is It a Thing?</h3>
+          <h2>Cats in Control-Is It a Thing?</h2>
         </div>
-        <div id="cm3">
+        <div class="brooklyn">
           <p>BROOKLYN, NY- In molestie nulla sodales sit amet. Proin vulputate, ipsum porta aliquam commodo, nunc nibh tincidunt lorem, vel consectetur neque mi vel neque. Mauris ultricies, nulla scelerisque sollicitudin lobortis, dui est sodales sapien, a vestibulum velit diam eget felis. Vivamus dignissim lacinia dolor, quis commodo tellus pellentesque in.
           </P>
         </div>
       </div>
 
       <!-- content in right hand column -->
-      <div class="smallcolumn">
-        <img id="cs1" src="./resources/images/img-news-bite.png" alt="New Bite picture of a cookie" width="200" height:"200">
-        <div id="cs2">
+      <div class="column small">
+        <div class="cookie">
+          <img src="./resources/images/img-news-bite.png" alt="New Bite picture of a cookie" width="200" height:"200">
+        </div>
+        <div class="newsbites">
           <h4>NEWS BITES</h4>
-          <p>
-            Cat Emoji Goes Viral Buy Youtube Views Home Business Advertising Ideas Advertising Internet Online Illustration in Marketing Materials Finally a Top Secret Way You Can
-          </p>
+          <div class="bitelist">
+            <span>Cat Emoji Goes Viral</span>
+            <span>Buy Youtube Views</span>
+            <span>Home Business Advertising Ideas</span>
+            <span>Advertising Internet Online</span>
+            <span>Illustration in Marketing Materials</span>
+            <span>Finally a Top Secret Way You Can</span>
+          </div>
         </div>
       </div>
 
     </div>
 
     <!--start of footer-->
-    <footer class="footer">
-      <div class="mtfooter">
+    <footer>
+      <div class="times">
         <p>My Times |</p>
+        <div class="footitems">
+          <span><a href="#">World</a></span>
+          <span><a href="#">U.S.</a></span>
+          <span><a href="#">Tech</a></span>
+          <span><a href="#">Science</a></span>
+        </div>
+      </div>
+      <div class="copywrite">
+        <p>&copy 2016, My Times (A Division of Codecademy bite)</p>
       </div>
     </footer>
+
   </body>
 </html>
